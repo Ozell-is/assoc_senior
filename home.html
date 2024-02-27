@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">Pour nos ainés</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item pe-5">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-5" href="#benevoles">Bénévoles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-5" href="#qui">Qui sommes-nous?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-5" href="#dons">Faites un don</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contact">Contactez-nous</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--fin navbar-->
+
+    <!--carousel-->
+
+    <section class="d-none d-lg-block">
+        <div id="carousel" class="carousel slide carousel-fade " data-ride="carousel">
+            <!--barre en bas pour changer de slide-->
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active bg-black"
+                    aria-current="true" aria-label="Diapo 1" active></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Diapo 2"
+                    class="bg-black"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Diapo 3"
+                    class="bg-black"></button>
+            </div>
+            <!--premier carousel-->
+            <div class="carousel-inner bg-warning-subtle " style="height: 60vh;">
+                <div class="carousel-item active d-flex align-items-center justify-content-center py-5">
+                    <div class="row">
+                        <img src="img/carousel-1.png" class="col-6 img-fluid p-5" alt="" style="height: 45vh;">
+                        <div class="col-6 ps-5 d-flex flex-column">
+                            <h1>promenade accompagnée</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui reprehenderit, voluptate
+                                eius vitae provident facere sint labore omnis in id aspernatur? Libero dolorum
+                                cupiditate magni a nesciunt omnis ratione rerum.</p>
+
+
+                            <button class="btn-primary mt-auto  text-bg-primary w-25">En savoir plus</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!--deuxieme carousel-->
+                <div class="carousel-item d-flex align-items-center justify-content-center">
+                    <div class="row">
+
+                        <div class="col-6 d-flex flex-column ps-5">
+                            <h1>Activité collective</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui reprehenderit, voluptate
+                                eius
+                                vitae provident facere sint labore omnis in id aspernatur? Libero dolorum cupiditate
+                                magni a
+                                nesciunt omnis ratione rerum.</p>
+                            <button class="btn-primary text-bg-primary mt-auto w-25">En savoir plus</button>
+                        </div>
+                        <img src="img/carousel-2.jpg" alt="" class="col-6 img-fluid p-5"
+                            style="height: 55vh;width: auto;">
+                    </div>
+                </div>
+                <!--troisieme carousel-->
+
+                <div class="carousel-item d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <img src="img/carousel-3.jpg" alt="" class=" col-6 img-fluid p-5"
+                            style="height: 50vh; width: auto;">
+                        <div class="col-6 d-flex flex-column">
+                            <h1>Accompagnement administratif</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui reprehenderit, voluptate
+                                eius
+                                vitae provident facere sint labore omnis in id aspernatur? Libero dolorum cupiditate
+                                magni a
+                                nesciunt omnis ratione rerum.</p>
+                            <button class="btn-primary text-bg-primary mt-auto w-25">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fleche changement carousel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--fin carousel-->
+
+    <!--card + bouton collapse-->
+
+    <section id="benevoles" class="mt-5 corpse">
+        <h1>Nos benevoles</h1>
+        <div class="container">
+            <div class="row">
+                <!--premiere card-->
+                <div class="card col-md-4">
+                    <img src="img/benevole-1.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Jupyter</h3>
+                        <h5 class="card-subtitle">Pour vous accompagner</h5>
+
+                        <!--bouton collapse pour faire defiler texte-->
+
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse">En savoir
+                            plus</button>
+                        <div class="collapse" id="collapse">
+                            <div class="card card-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae alias sapiente,
+                                    magnam tempora reprehenderit labore expedita suscipit enim dicta, placeat numquam
+                                    animi beatae, modi dignissimos reiciendis repellat vitae. A, doloremque.
+                                    At neque voluptates repudiandae maiores labore dolor. Fugit asperiores voluptates
+                                    quod. Ut dignissimos, at provident incidunt officiis molestiae cum quae sapiente
+                                    error ratione inventore repudiandae doloribus odio architecto vel nemo!
+                                    Laborum atque rerum dolore voluptatem blanditiis repellendus voluptates neque, autem
+                                    aliquid odit, suscipit ullam ab ipsa provident alias deserunt culpa. Esse deleniti
+                                    ullam ipsa voluptatem nihil quasi, beatae omnis! Culpa?
+                                    Perspiciatis, unde sit. Nemo porro, dolor officia corporis eos cum esse totam vitae.
+                                    Dolore sapiente ad exercitationem debitis. Quia suscipit est sequi error quisquam
+                                    voluptas, dignissimos id. Ipsam, recusandae aliquam.
+                                    Laudantium at accusantium atque quo, non animi nihil veritatis iste nulla quibusdam
+                                    voluptatum dolores quis magni assumenda fugit! Voluptas consectetur temporibus
+                                    explicabo dicta tempore cumque, dolores necessitatibus. Amet, facilis minima?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--deuxieme card-->
+                <div class="card col-md-4">
+                    <img src="img/benevole-2.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Saturne</h3>
+                        <h5 class="card-subtitle">Pour vous faire de bon petits plâts</h5>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">En savoir
+                            plus</button>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae alias sapiente,
+                                    magnam tempora reprehenderit labore expedita suscipit enim dicta, placeat numquam
+                                    animi beatae, modi dignissimos reiciendis repellat vitae. A, doloremque.
+                                    At neque voluptates repudiandae maiores labore dolor. Fugit asperiores voluptates
+                                    quod. Ut dignissimos, at provident incidunt officiis molestiae cum quae sapiente
+                                    error ratione inventore repudiandae doloribus odio architecto vel nemo!
+                                    Laborum atque rerum dolore voluptatem blanditiis repellendus voluptates neque, autem
+                                    aliquid odit, suscipit ullam ab ipsa provident alias deserunt culpa. Esse deleniti
+                                    ullam ipsa voluptatem nihil quasi, beatae omnis! Culpa?
+                                    Perspiciatis, unde sit. Nemo porro, dolor officia corporis eos cum esse totam vitae.
+                                    Dolore sapiente ad exercitationem debitis. Quia suscipit est sequi error quisquam
+                                    voluptas, dignissimos id. Ipsam, recusandae aliquam.
+                                    Laudantium at accusantium atque quo, non animi nihil veritatis iste nulla quibusdam
+                                    voluptatum dolores quis magni assumenda fugit! Voluptas consectetur temporibus
+                                    explicabo dicta tempore cumque, dolores necessitatibus. Amet, facilis minima?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--troisieme card-->
+                <div class="card col-md-4">
+                    <img src="img/benevole-3.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Pluton</h3>
+                        <h5 class="card-subtitle">Pour vous emmener</h5>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">En savoir
+                            plus</button>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae alias sapiente,
+                                    magnam tempora reprehenderit labore expedita suscipit enim dicta, placeat numquam
+                                    animi beatae, modi dignissimos reiciendis repellat vitae. A, doloremque.
+                                    At neque voluptates repudiandae maiores labore dolor. Fugit asperiores voluptates
+                                    quod. Ut dignissimos, at provident incidunt officiis molestiae cum quae sapiente
+                                    error ratione inventore repudiandae doloribus odio architecto vel nemo!
+                                    Laborum atque rerum dolore voluptatem blanditiis repellendus voluptates neque, autem
+                                    aliquid odit, suscipit ullam ab ipsa provident alias deserunt culpa. Esse deleniti
+                                    ullam ipsa voluptatem nihil quasi, beatae omnis! Culpa?
+                                    Perspiciatis, unde sit. Nemo porro, dolor officia corporis eos cum esse totam vitae.
+                                    Dolore sapiente ad exercitationem debitis. Quia suscipit est sequi error quisquam
+                                    voluptas, dignissimos id. Ipsam, recusandae aliquam.
+                                    Laudantium at accusantium atque quo, non animi nihil veritatis iste nulla quibusdam
+                                    voluptatum dolores quis magni assumenda fugit! Voluptas consectetur temporibus
+                                    explicabo dicta tempore cumque, dolores necessitatibus. Amet, facilis minima?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--fin card-->
+
+
+    <section id="qui" class="corpse">
+        <div class="container">
+            <div class="row">
+                <div class="col--md-6">
+                    <h2>Qui sommes-nous?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti repudiandae quis
+                        quaerat temporibus in et quod quae reiciendis at? Earum, nulla veritatis? In, quae deleniti
+                        expedita ut deserunt velit?
+                        Provident pariatur a magnam, aliquid architecto dolore sequi perspiciatis minima maiores vitae
+                        doloremque ab nemo quae quam facilis inventore, quia delectus iure unde earum ut. Magni ex
+                        placeat reprehenderit optio.
+                        Eligendi ad accusamus fuga voluptas, esse quidem temporibus! Dicta quod ratione velit obcaecati
+                        voluptatibus iste non! Sequi eum pariatur repellat itaque, deleniti, hic officia corrupti
+                        necessitatibus dolore animi exercitationem repudiandae?</p>
+                </div>
+                <!--accordeon-->
+                <div class="col-md-6">
+                    <h2>Notre missions</h2>
+                    <div class="accordion w-75 mx-auto" id="accordion">
+                        <!--premier accordeon-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="title1">
+                                <button class="accordion-button accordion-collapse" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    Une présence pour nos anciens
+                                </button>
+                            </h3>
+                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae nesciunt
+                                        ducimus blanditiis repellat quibusdam non, impedit, commodi distinctio accusamus
+                                        eum! Obcaecati maxime sapiente ea facilis maiores voluptatibus vel laudantium!
+                                        Obcaecati, harum eaque. Nisi ipsum dolorem sunt laborum adipisci eos cupiditate
+                                        minima quis, maxime velit in. Animi dolorem odio voluptatum sequi illo
+                                        asperiores unde vel, repellat iste, earum accusamus facilis.
+                                        Delectus, reprehenderit laboriosam corrupti molestias in, aut quis fugiat beatae
+                                        est facere similique rerum et itaque nostrum officiis asperiores, ut nam neque
+                                        voluptates vitae. Qui corrupti ad labore numquam ratione?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--deuxieme accordeon-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="title2">
+                                <button class="accordion-button accordion-collapse" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-ac-2" aria-expanded="false"
+                                    aria-controls="collapse-ac-2">
+                                    Toute aide est la bienvenue
+                                </button>
+                            </h3>
+                            <div id="collapse-ac-2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae nesciunt
+                                        ducimus blanditiis repellat quibusdam non, impedit, commodi distinctio accusamus
+                                        eum! Obcaecati maxime sapiente ea facilis maiores voluptatibus vel laudantium!
+                                        Obcaecati, harum eaque. Nisi ipsum dolorem sunt laborum adipisci eos cupiditate
+                                        minima quis, maxime velit in. Animi dolorem odio voluptatum sequi illo
+                                        asperiores unde vel, repellat iste, earum accusamus facilis.
+                                        Delectus, reprehenderit laboriosam corrupti molestias in, aut quis fugiat beatae
+                                        est facere similique rerum et itaque nostrum officiis asperiores, ut nam neque
+                                        voluptates vitae. Qui corrupti ad labore numquam ratione?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--troisieme accordeon-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="title3">
+                                <button class="accordion-button accordion-collapse" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-ac-3" aria-expanded="false"
+                                    aria-controls="collapse-ac-3">
+                                    Grâce à vos dons
+                                </button>
+                            </h3>
+                            <div id="collapse-ac-3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae nesciunt
+                                        ducimus blanditiis repellat quibusdam non, impedit, commodi distinctio accusamus
+                                        eum! Obcaecati maxime sapiente ea facilis maiores voluptatibus vel laudantium!
+                                        Obcaecati, harum eaque. Nisi ipsum dolorem sunt laborum adipisci eos cupiditate
+                                        minima quis, maxime velit in. Animi dolorem odio voluptatum sequi illo
+                                        asperiores unde vel, repellat iste, earum accusamus facilis.
+                                        Delectus, reprehenderit laboriosam corrupti molestias in, aut quis fugiat beatae
+                                        est facere similique rerum et itaque nostrum officiis asperiores, ut nam neque
+                                        voluptates vitae. Qui corrupti ad labore numquam ratione?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--fin accordeon-->
+
+    <!--progress bar + fenetre modal-->
+
+    <section id="dons" class="corpse">
+        <h2 class="text-center">Aidez-nous, faites un don</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus, mollitia minima vel accusamus fugit
+            inventore fugiat distinctio amet porro, ad esse veniam, explicabo aut officia expedita blanditiis aperiam
+            est.
+            In dolores obcaecati nihil quod, dignissimos culpa voluptatem! Aspernatur ad neque sunt labore eveniet
+            voluptas dolor dolores totam itaque quisquam quasi facilis ex ut, nam quos vel quaerat omnis adipisci.</p>
+
+        <!--code progress bar-->
+
+        <div class="container">
+            <div class="progress" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50">
+                <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" style="width: 30%;">30%
+                </div>
+            </div>
+        </div>
+        <!--fin progress bar-->
+
+        <!--fenetre modal pour don-->
+        <div class="container pt-5">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-don">
+                Faites un don
+            </button>
+            <div class="modal fade" id="modal-don">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title"> FAITES UN DON</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="col">
+                                    <label for="name">Nom</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                                </div>
+                                <div class="col">
+                                    <label for="firstname">Prénom</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Votre nom">
+                                </div>
+                                <div class="col">
+                                    <label for="email">E-mail</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Votre e-mail">
+                                </div>
+                                <div class="col">
+                                    <label for="amount" class="form-select">Veuillez séléctionnez un montant</label>
+                                    <select name="amount" id="amount" class="form-control">
+                                        <option value="10">10€</option>
+                                        <option value="20">20€</option>
+                                        <option value="30">30€</option>
+                                        <option value="40">40€</option>
+                                        <option value="50">50€</option>
+                                        <option value="60">60€</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-primary">valider votre choix</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            Vous serez dans quelques instant rediriger chez notre partenaire pour le paiement.
+                            <button class="btn btn-danger btn-sm" type="button" data-bs-dismiss="modal">fermer la
+                                fenetre</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer id="contact" class="p-5" style="background-color: #FEE3D0;">
+        <div class="container">
+            <h3 class="text-center">Contactez-nous</h3>
+            <form action="">
+                <div class="col form-group">
+                    <label for="contact-name">nom</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col  form-group">
+                    <label for="contact-firstname">Prénom</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col form-group">
+                    <label for="contact-email">email</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col form-group">
+                    <label for="contact-com">votre message</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">envoyer</button>
+            </form>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

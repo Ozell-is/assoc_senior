@@ -1,0 +1,13 @@
+@media screen and (min-width: 1023px) {
+  .corpse {
+    margin: 15%;
+  }
+}
+
+.carousel-indicators button {
+  width: 50px !important;
+  
+  height: 20px !important;
+  
+  border-radius: 50%;
+}
